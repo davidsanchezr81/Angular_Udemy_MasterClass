@@ -1,4 +1,4 @@
-
+'use strict'
 /*
 Que nos diga que si el numero es par o impar
 1. Ventana Prompt
