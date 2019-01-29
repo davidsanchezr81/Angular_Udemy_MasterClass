@@ -19,7 +19,7 @@ function sumame(numero1, numero2, sumaYmuestra, sumaPorDos){
 }
 
 //console.log(sumame(1,2));
-
+//FUNCIONES CALL BACK
 sumame(5,7,function(dato){
     console.log("La suma es: ",dato)
 },
@@ -27,3 +27,14 @@ function(dato){
     console.log("La suma por dos es :", (dato*2))
 }
 );
+
+
+//FUNCIONES DE FLECHA
+sumame(5,7,(dato) => {
+    console.log("La suma es: ",dato)
+},
+(dato) =>{
+    console.log("La suma por dos es :", (dato*2))
+}
+);
+
