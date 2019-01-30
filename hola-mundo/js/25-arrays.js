@@ -20,12 +20,23 @@ console.log(nombres[2].length);
 // }
 
 
+// usando for para los loops
 document.write("<h1>Lenguajes de programacion</h1>");
 document.write("<ul>");
 
-for(var i = 0; i<lenguajes.length; i++)
-{
+for(var i = 0; i<lenguajes.length; i++){
 document.write("<li>" + lenguajes[i] + "</li>")
 }
+
+document.write("</ul>");
+
+// usando foreach para los loops
+
+document.write("<h1>Lenguajes de programacion</h1>");
+document.write("<ul>");
+
+lenguajes.foreach((element, index, arr) =>{
+document.write("<li>" + element + "</li>")
+});
 
 document.write("</ul>");
