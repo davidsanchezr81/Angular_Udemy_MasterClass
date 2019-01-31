@@ -64,6 +64,20 @@ var peliculas = ['La vida es bella', 'La verdad duele', 'Gran Torino'];
 
 console.log(peliculas);
 
-pelicula.sort(); // lo ordena por orden alfabetico o numerico
+peliculas.sort(); // lo ordena por orden alfabetico o numerico
 
-pelicula.reverse(); // lo ordena por orden invertido
+peliculas.reverse(); // lo ordena por orden invertido
+
+
+//---- Recorrer arrays con "for in"
+
+var lenguajes = ["Java","PHP","HTML", "C#", "JS"];
+
+for(let lenguaje in lenguajes){
+    document.write("<li>" + lenguaje + "</li>") // esto despliega los bullet point con numeros del 0 al 4
+};
+
+for(let lenguaje in lenguajes){
+    document.write("<li>" + lenguajes[lenguaje] + "</li>") // esto despliega los bullet point con los lenguajes de programacion
+                                                            // listeados. Eso se debe al index que esta entre los corchetes
+};
