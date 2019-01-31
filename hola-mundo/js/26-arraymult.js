@@ -57,3 +57,13 @@ var cadena = "texto1, texto2, texto3";
 var cadena_array = cadena.split(", ");
 
 console.log(cadena_array);
+
+//-- Ordenar array
+
+var peliculas = ['La vida es bella', 'La verdad duele', 'Gran Torino'];
+
+console.log(peliculas);
+
+pelicula.sort(); // lo ordena por orden alfabetico o numerico
+
+pelicula.reverse(); // lo ordena por orden invertido
