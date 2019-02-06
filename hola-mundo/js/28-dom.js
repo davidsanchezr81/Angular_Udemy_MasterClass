@@ -6,7 +6,7 @@ function cambiaColor(color){
     caja.style.backgroundColor = color;
 }
 
-//para seleccionar elementos en ek DOM
+//////Conseguir elementos con un ID concreto
 
 //var caja = document.getElementById("micaja").innerHTML; // inner saca el texto de adentro
 // var caja = document.getElementById("micaja") //# forma 1 de hacerlo
@@ -20,10 +20,42 @@ caja.style.padding = "20px";
 caja.style.color = "white";
 caja.className = "Hola"; // para cambiar el nombre de la clase
 
-
-
-console.log(caja);
+// console.log(caja);
 
 // seleccionar usando query Selector
 
 
+//////Conseguir elementos por su etiqueta
+var todosLosDivs = document.getElementsByTagName('div');
+
+var contenidoEnTexto = todosLosDivs[2].textContent; // Para el ver el contenido de un elemento
+
+console.log(contenidoEnTexto);
+
+//**  Para cambiar el contenido de un elemento en una posicion especifica
+
+var contenidoEnTexto1 = todosLosDivs[1];
+contenidoEnTexto1.innerHTML = " Otro elemento para la segunda posicion";
+
+console.log(contenidoEnTexto1);
+
+
+var seccion = document.querySelector('#miseccion');
+
+var hr = document.createElement("hr");
+
+
+var valor;
+for( valor in todosLosDivs){
+    if(typeof todosLosDivs[valor].textContent == 'string'){ // esto es para que se desplieguen solo los elementos de string
+    var parrafo = document.createElement("p");
+    var texto = document.createTextNode(todosLosDivs[valor].textContent);
+    parrafo.append(texto);
+    seccion.append(parrafo);
+    
+    }
+}
+
+seccion.append(hr);
+
+//////Conseguir elementos por su clase
