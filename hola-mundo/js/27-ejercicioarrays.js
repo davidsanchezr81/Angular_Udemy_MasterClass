@@ -60,4 +60,19 @@ mostrarArray(numeros1, 'ordenado');
 
 // Invertir y mostrar
 numeros1.reverse();
-mostrarArray(numeros1, 'reverso')
+mostrarArray(numeros1, 'reverso');
+
+// Contar elementos
+document.write("<h1> El array tiene :"+numeros1.length+" elementos</h1>")
+
+//Buscar elementos
+var busqueda = parseInt(prompt("Ingrese un numero: ",0));
+
+var posicion = numeros1.findIndex(numero => numero == busqueda);
+
+if(posicion && posicion != -1){
+    document.write("<h1>Encontrado!!</h1>")
+    document.write("<h1>La posicion es :"+posicion+"</h1>")
+}else{
+    document.write("No encontrado =(")
+}
